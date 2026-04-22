@@ -1,6 +1,4 @@
-/* ================================
-   ESTILO GENERAL
-=================================*/
+
 
 * {
     margin: 0;
@@ -10,15 +8,13 @@
 }
 
 body {
-    background: #00e5ff; /* CIAN LED SÓLIDO */
+    background: #00e5ff; 
     color: #fff;
     min-height: 100vh;
     padding-bottom: 50px;
 }
 
-/* ================================
-   HEADER / BUSCADOR / FILTROS
-=================================*/
+
 
 .header {
     text-align: center;
@@ -29,7 +25,7 @@ body {
     font-size: 3rem;
     font-weight: 800;
     text-shadow: 0 0 10px #e69a0eaa, 0 0 20px #d35129;
-    color: lch(88.5% 88.29 98.68); /* amarillo patito LED */
+    color: lch(88.5% 88.29 98.68); 
 }
 
 .search-container {
@@ -83,9 +79,7 @@ body {
     box-shadow: 0 0 10px #ffffffaa;
 }
 
-/* ================================
-   GRID DE POKEMON
-=================================*/
+
 
 .pokemon-grid {
     padding: 20px;
@@ -94,9 +88,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-/* ================================
-   CARD DE POKEMON
-=================================*/
 
 .pokemon-card {
     background: #ffffffee;
@@ -113,7 +104,7 @@ body {
     position: relative;
 }
 
-/* Efecto de flotación al pasar el mouse */
+
 .pokemon-card:hover {
     transform: translateY(-10px) scale(1.05);
     box-shadow: 
@@ -122,19 +113,19 @@ body {
         inset 0 0 15px #00e5ff;
 }
 
-/* IMAGEN */
+
 .pokemon-card img {
     width: 140px;
     filter: drop-shadow(0 0 10px #00e5ff);
     transition: transform 0.3s ease;
 }
 
-/* Flotación de la imagen */
+
 .pokemon-card:hover img {
     transform: translateY(-8px);
 }
 
-/* Nombre / número */
+
 .pokemon-card h3 {
     margin-top: 10px;
     font-size: 1.4rem;
@@ -145,7 +136,7 @@ body {
     color: #777;
 }
 
-/* TIPOS */
+
 .type-tag {
     display: inline-block;
     margin: 8px 4px;
@@ -157,7 +148,7 @@ body {
     box-shadow: 0 0 8px #ffffffaa;
 }
 
-/* Tipos con colores pastel LED */
+
 .fire { background: #ff6b6b; }
 .water { background: #4d9eff; }
 .grass { background: #59d98e; }
@@ -177,9 +168,7 @@ body {
 .poison { background: #b05ff0; }
 .flying { background: #89b9ff; }
 
-/* ================================
-   PAGINACIÓN
-=================================*/
+
 
 .pagination {
     text-align: center;
@@ -203,9 +192,7 @@ body {
     transform: scale(1.1);
 }
 
-/* ================================
-   MODAL DE INFORMACIÓN
-=================================*/
+
 
 .modal {
     display: none;
@@ -237,7 +224,7 @@ body {
     from { transform: scale(0.8); opacity: 0; }
     to   { transform: scale(1); opacity: 1; }
 }
-/* TIPOS DE POKEMON */
+
 .type {
     text-decoration: none;       
     font-family: 'Poppins', sans-serif;  
