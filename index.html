@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex LED</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- HEADER / BUSCADOR -->
+    <header class="header">
+        <h1 class="title">Pokédex</h1>
+
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Buscar Pokémon por nombre o número..." 
+            />
+
+            <button id="searchBtn">🔍</button>
+        </div>
+        =
+
+        <!-- FILTROS DE TIPO -->
+        <div class="filters">
+            <select id="typeFilter">
+                <option value="">Filtrar por tipo</option>
+                <option value="fire">🔥 Fuego</option>
+                <option value="water">💧 Agua</option>
+                <option value="grass">🍃 Planta</option>
+                <option value="electric">⚡ Eléctrico</option>
+                <option value="ice">❄ Hielo</option>
+                <option value="rock">🪨 Roca</option>
+                <option value="ground">🌍 Tierra</option>
+                <option value="psychic">🔮 Psíquico</option>
+                <option value="ghost">👻 Fantasma</option>
+                <option value="dragon">🐉 Dragón</option>
+                <option value="dark">🌑 Siniestro</option>
+                <option value="fairy">✨ Hada</option>
+                <option value="steel">⚙ Acero</option>
+                <option value="bug">🐛 Bicho</option>
+                <option value="normal">⚪ Normal</option>
+                <option value="fighting">🥊 Lucha</option>
+                <option value="poison">☠ Veneno</option>
+                <option value="flying">🌬 Volador</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- LISTA DE POKEMON -->
+    <main>
+        <div id="pokemonContainer" class="pokemon-grid">
+            <!-- JS inserts cards here -->
+        </div>
+    </main>
+
+    <!-- PAGINACIÓN -->
+    <div class="pagination">
+        <button id="prevBtn">⬅ Anterior</button>
+        <span id="pageIndicator">1</span>
+        <button id="nextBtn">Siguiente ➡</button>
+    </div>
+
+    <!-- MODAL DE INFO DETALLADA -->
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span class="closeModal">&times;</span>
+            <div id="modalBody">
+                <!-- JS will fill details -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="app.js"></script>
+</body>
+</html>
